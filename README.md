@@ -10,29 +10,35 @@ pnpm add --save-dev @guillaume-docquier/oxlint oxlint oxlint-tsgolint
 
 ## Use
 
-Re-export the complete shared config from `oxlint.config.ts`:
+The package exports two independent configs:
+
+- `typescript` contains the shared TypeScript rules and root settings.
+- `react` contains the React rules and browser environment.
+
+Pick the configs your project needs and compose them in `oxlint.config.ts`:
 
 ```ts
-export { default } from "@guillaume-docquier/oxlint"
-```
-
-The direct re-export preserves root-only settings such as type-aware linting, categories, environments, and ignore patterns.
-
-To add project-specific overrides, spread the shared config and append to its overrides:
-
-```ts
-import sharedConfig from "@guillaume-docquier/oxlint"
+import { react, typescript } from "@guillaume-docquier/oxlint"
 import { defineConfig } from "oxlint"
 
 export default defineConfig({
-  ...sharedConfig,
+  extends: [typescript, react],
+})
+```
+
+The shared configs do not contain project-specific file patterns. Scope them in the consuming project when needed. For example, a monorepo can apply `typescript` globally and `react` only to its frontend:
+
+```ts
+import { react, typescript } from "@guillaume-docquier/oxlint"
+import { defineConfig } from "oxlint"
+
+export default defineConfig({
+  extends: [typescript],
   overrides: [
-    ...(sharedConfig.overrides ?? []),
     {
-      files: ["scripts/**/*"],
-      rules: {
-        "no-console": "off",
-      },
+      ...react,
+      files: ["frontend/**/*.{ts,tsx}"],
+      excludeFiles: ["frontend/playwright/**/*"],
     },
   ],
 })
