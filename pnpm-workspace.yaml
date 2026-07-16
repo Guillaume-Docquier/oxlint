@@ -1,0 +1,4 @@
+strictPeerDependencies: true
+
+minimumReleaseAgeExclude:
+  - "@guillaume-docquier/oxfmt"
