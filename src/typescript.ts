@@ -395,6 +395,7 @@ export default defineConfig({
         ignoreStatic: false,
       },
     ],
+    "unicorn/no-array-sort": ["error", { allowAfterSpread: true }],
   },
   overrides: [
     {
