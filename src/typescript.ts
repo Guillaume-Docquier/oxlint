@@ -396,4 +396,12 @@ export default defineConfig({
       },
     ],
   },
+  overrides: [
+    {
+      files: ["**/*.{test,spec}.{ts,tsx}"],
+      rules: {
+        "unicorn/consistent-function-scoping": "off", // Useful to keep functions scoped to their test
+      },
+    },
+  ],
 })
