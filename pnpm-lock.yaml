@@ -208,8 +208,8 @@ importers:
   .:
     devDependencies:
       '@guillaume-docquier/oxfmt':
-        specifier: ^1.0.0
-        version: 1.0.0(oxfmt@0.57.0)
+        specifier: ^1.0.4
+        version: 1.0.4(oxfmt@0.57.0)
       '@semantic-release/commit-analyzer':
         specifier: ^13.0.1
         version: 13.0.1(semantic-release@25.0.7(typescript@7.0.2))
@@ -232,13 +232,13 @@ importers:
         specifier: runtime:26.5.0
         version: runtime:26.5.0
       oxfmt:
-        specifier: ^0.57.0
+        specifier: '>=0.57.0'
         version: 0.57.0
       oxlint:
         specifier: ^1.71.0
         version: 1.74.0(oxlint-tsgolint@0.24.0)
       oxlint-tsgolint:
-        specifier: ^0.24.0
+        specifier: '>=0.24.0'
         version: 0.24.0
       semantic-release:
         specifier: ^25.0.5
@@ -273,10 +273,10 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@guillaume-docquier/oxfmt@1.0.0':
-    resolution: {integrity: sha512-a6DuUsZss824CSiNwIVqqTZNHLMNfyxJGI6/e9q7KianNriMxopYRE/PAb39gG8oeZytmMRx1BagDNlZjonW+w==}
+  '@guillaume-docquier/oxfmt@1.0.4':
+    resolution: {integrity: sha512-cP+8FuWjlB31Yp/847ZPgdo/+VVrinTghAwdQcxvpxlS6V3XCzd+jYY0H6uLZAffORNPUofAF465YEbeHSYEdw==}
     peerDependencies:
-      oxfmt: ^0.57.0
+      oxfmt: '>=0.57.0'
 
   '@octokit/auth-token@6.0.0':
     resolution: {integrity: sha512-P4YJBPdPSpWTQ1NU4XYdvHvXJJDxM6YwpS0FZHRgP7YFkdVxsWcpWGy/NVqlAA7PcPCnMacXlRm1y2PFZRWL/w==}
@@ -2039,7 +2039,7 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@guillaume-docquier/oxfmt@1.0.0(oxfmt@0.57.0)':
+  '@guillaume-docquier/oxfmt@1.0.4(oxfmt@0.57.0)':
     dependencies:
       oxfmt: 0.57.0
 
