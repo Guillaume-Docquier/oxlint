@@ -480,8 +480,46 @@ export default defineConfig({
       },
     ],
 
+    // UNICORN - CORRECTNESS
+    "unicorn/no-await-in-promise-methods": "error",
+    "unicorn/no-empty-file": "error",
+    "unicorn/no-invalid-fetch-options": "error",
+    "unicorn/no-invalid-remove-event-listener": "error",
+    "unicorn/no-new-array": "error",
+    "unicorn/no-single-promise-in-promise-methods": "error",
+    "unicorn/no-thenable": "error",
+    "unicorn/no-unnecessary-await": "error",
+    "unicorn/no-useless-fallback-in-spread": "error",
+    "unicorn/no-useless-length-check": "error",
+    "unicorn/no-useless-spread": "error",
+    "unicorn/prefer-set-size": "error",
+    "unicorn/prefer-string-starts-ends-with": "error",
+
     // UNICORN - SUSPICIOUS
+    "unicorn/consistent-function-scoping": "error",
+    "unicorn/no-accessor-recursion": "error",
+    "unicorn/no-array-fill-with-reference-type": "error",
+    "unicorn/no-array-reverse": "error",
     "unicorn/no-array-sort": "off", // The rule doesn't have good configuration options and flags a lot of fine use cases
+    "unicorn/no-confusing-array-with": "error",
+    "unicorn/no-instanceof-builtins": "error",
+    "unicorn/prefer-add-event-listener": "error",
+    "unicorn/require-module-specifiers": "error",
+    "unicorn/require-post-message-target-origin": "error",
+
+    // UNICORN - PERF
+    "unicorn/prefer-array-find": "error",
+    "unicorn/prefer-array-flat-map": "error",
+    "unicorn/prefer-set-has": "error",
+
+    // UNICORN - RESTRICTION
+    "unicorn/import-style": "error",
+
+    // UNICORN - STYLE
+    "unicorn/custom-error-definition": "error",
+    "unicorn/error-message": "error",
+    "unicorn/prefer-object-from-entries": "error",
+    "unicorn/throw-new-error": "error",
   },
   overrides: [
     {
