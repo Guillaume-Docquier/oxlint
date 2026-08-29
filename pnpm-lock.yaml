@@ -7,52 +7,52 @@ importers:
     configDependencies: {}
     packageManagerDependencies:
       '@pnpm/exe':
-        specifier: 11.15.0
-        version: 11.15.0
+        specifier: 11.24.0
+        version: 11.24.0
       pnpm:
-        specifier: 11.15.0
-        version: 11.15.0
+        specifier: 11.24.0
+        version: 11.24.0
 
 packages:
 
-  '@pnpm/exe@11.15.0':
-    resolution: {integrity: sha512-6owINZtuIvn0wbfnEsUrkHYOhRBodyeXP4V6DQhD0fHhd+ZAdxokIr4EFJCINxrvWd7Y4thF90U+jZklh2Ax+Q==}
+  '@pnpm/exe@11.24.0':
+    resolution: {integrity: sha512-yCZWlhNOB3GS0I2uZC/CggwGZ+TLVLbOuBcMbVWXKFYJOg/0gnQw8eIN6YZLA+eeSvfHEvS79IDdbwu5CMQR0g==}
     hasBin: true
 
-  '@pnpm/linux-arm64@11.15.0':
-    resolution: {integrity: sha512-iAA1LfnRdWVgQTlS6CtX25M7VMD5KKuGf6i9+VJY2DUSVQlj3bPzMOMyjjklLNiVQ8+UF40SyTMVfCGvHbev2w==}
+  '@pnpm/linux-arm64@11.24.0':
+    resolution: {integrity: sha512-wgAF82SnMfWU8/xb0VLszKJYqL+MDHMMGz42s4jW+GIFUGYna/xG5VXUxgcv2FaZhJ2GbyZVUf2f/UJs6nb+zA==}
     cpu: [arm64]
     os: [linux]
 
-  '@pnpm/linux-x64@11.15.0':
-    resolution: {integrity: sha512-3BcDyhns7zb0n4dxe2XQa9d8ZfjstjKAggQU2tFqxpG5Se4Hy2MUGzY0dR4vq7IBdRWsKYAHM2aX8h9c58/W/Q==}
+  '@pnpm/linux-x64@11.24.0':
+    resolution: {integrity: sha512-94e4GRvFB5hEwr9subLHLF2q3+DduKFPh2FE0+F7fgqt1Bs86gDxjJ7bbQCpTX2X4j6cUTA5Hc0HFzMz4xKnaA==}
     cpu: [x64]
     os: [linux]
 
-  '@pnpm/linuxstatic-arm64@11.15.0':
-    resolution: {integrity: sha512-xoMyQ05N47e9/HmNeD40NEuV4QWqYTriivoGI0A5eRMcdyufCvpBVwcd4HIPBkxVTu/oKKiWgmGuQ2rmE8CvXA==}
+  '@pnpm/linuxstatic-arm64@11.24.0':
+    resolution: {integrity: sha512-1Vwk+M5fzjg364SDZfrtaZfthsy1THS9eSdH7dpBaG0l3HbLusQrh8labRlpMmK8KyQXcI1FvYLzPZVuAGGPng==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@pnpm/linuxstatic-x64@11.15.0':
-    resolution: {integrity: sha512-S38GXsw5eOCtWiO29qkkjKM5zJsC5mwwy2VnQB2mv16J1rTluHTUeXzQXQ/p/xDKofWjoHGlOnLJCZap4WuDcw==}
+  '@pnpm/linuxstatic-x64@11.24.0':
+    resolution: {integrity: sha512-oyPChWYdJpJMDnwtCFNzupD+GEO4G6DDMARuZfBrCUgqRm1h2KDcVCqk9IbfFBfxWdK+bVHJpA9Qp3nlL6/thw==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@pnpm/macos-arm64@11.15.0':
-    resolution: {integrity: sha512-dFlmFLMm2HMnpsbC+kWsuIPC7pUUH0rqzuBRrjKkf5vfWh+npUMHPazFigdXdZujDB/t0dDLb/nJL/VA82tlKw==}
+  '@pnpm/macos-arm64@11.24.0':
+    resolution: {integrity: sha512-nBzaOkR4D7HiuJRwlpk1aqaA/Wai11/zuCZjH5ZUe6fq86UWsqME0u3/F5K0j7yN8X2h7iKiApAaVmbfYMIc6A==}
     cpu: [arm64]
     os: [darwin]
 
-  '@pnpm/win-arm64@11.15.0':
-    resolution: {integrity: sha512-jwIWiRTC+26rZj3X7zqRkBaBX24WUinYt4Pk9jQfyH5B+3Kfco6CibNph0sKHmRaMxPk9A5aEG7z8g/K602wBQ==}
+  '@pnpm/win-arm64@11.24.0':
+    resolution: {integrity: sha512-ECLc0U/5cnXRkBrpO/dW+x1Y+a2CCqS4l171H7+YOQNcSaCAWlezP3YNvuO+5awwGWHIW7KEXbBruu5n50zVuA==}
     cpu: [arm64]
     os: [win32]
 
-  '@pnpm/win-x64@11.15.0':
-    resolution: {integrity: sha512-WXfNNU+kCAqVNkUPOpm+/SBO40IdLpwyypQge7npgGDImIPTJuZMp4L0aiiZnOHydHYMwBRpuwc364fzb1qHAQ==}
+  '@pnpm/win-x64@11.24.0':
+    resolution: {integrity: sha512-2wgDrs2SiyBoU6Yw1A8QLLqBABWHwuMMQOU85k7ZMut/W94u/oizrDQiyfJyW9XzYCz4Dn2iw7OHx+3R2x7mEQ==}
     cpu: [x64]
     os: [win32]
 
@@ -116,45 +116,45 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  pnpm@11.15.0:
-    resolution: {integrity: sha512-Jm+JV6MNK+bpRo5eZrze3TWnlBdfcbBnuoUE1obM4dDA9CmzPDI8PFaa1IkeZnV0pJ/3HRuJoizGbxPGWBjFeA==}
+  pnpm@11.24.0:
+    resolution: {integrity: sha512-vSfjRel23LC+C3oSKCF7BJqBfiGx81XJDb59xGZxiVqLwebQbCRVRQXqk+oLRfSJon7Bv7yN5qlln8oPFvoAAA==}
     engines: {node: '>=22.13'}
     hasBin: true
 
 snapshots:
 
-  '@pnpm/exe@11.15.0':
+  '@pnpm/exe@11.24.0':
     dependencies:
       '@reflink/reflink': 0.1.19
       detect-libc: 2.1.2
     optionalDependencies:
-      '@pnpm/linux-arm64': 11.15.0
-      '@pnpm/linux-x64': 11.15.0
-      '@pnpm/linuxstatic-arm64': 11.15.0
-      '@pnpm/linuxstatic-x64': 11.15.0
-      '@pnpm/macos-arm64': 11.15.0
-      '@pnpm/win-arm64': 11.15.0
-      '@pnpm/win-x64': 11.15.0
+      '@pnpm/linux-arm64': 11.24.0
+      '@pnpm/linux-x64': 11.24.0
+      '@pnpm/linuxstatic-arm64': 11.24.0
+      '@pnpm/linuxstatic-x64': 11.24.0
+      '@pnpm/macos-arm64': 11.24.0
+      '@pnpm/win-arm64': 11.24.0
+      '@pnpm/win-x64': 11.24.0
 
-  '@pnpm/linux-arm64@11.15.0':
+  '@pnpm/linux-arm64@11.24.0':
     optional: true
 
-  '@pnpm/linux-x64@11.15.0':
+  '@pnpm/linux-x64@11.24.0':
     optional: true
 
-  '@pnpm/linuxstatic-arm64@11.15.0':
+  '@pnpm/linuxstatic-arm64@11.24.0':
     optional: true
 
-  '@pnpm/linuxstatic-x64@11.15.0':
+  '@pnpm/linuxstatic-x64@11.24.0':
     optional: true
 
-  '@pnpm/macos-arm64@11.15.0':
+  '@pnpm/macos-arm64@11.24.0':
     optional: true
 
-  '@pnpm/win-arm64@11.15.0':
+  '@pnpm/win-arm64@11.24.0':
     optional: true
 
-  '@pnpm/win-x64@11.15.0':
+  '@pnpm/win-x64@11.24.0':
     optional: true
 
   '@reflink/reflink-darwin-arm64@0.1.19':
@@ -194,7 +194,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  pnpm@11.15.0: {}
+  pnpm@11.24.0: {}
 
 ---
 lockfileVersion: '9.0'
@@ -212,16 +212,16 @@ importers:
         version: 1.0.4(oxfmt@0.60.0)
       '@semantic-release/commit-analyzer':
         specifier: ^13.0.1
-        version: 13.0.1(semantic-release@25.0.8(typescript@7.0.2))
+        version: 13.0.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       '@semantic-release/exec':
         specifier: ^7.1.0
-        version: 7.1.0(semantic-release@25.0.8(typescript@7.0.2))
+        version: 7.1.0(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       '@semantic-release/github':
         specifier: ^12.0.9
-        version: 12.0.9(semantic-release@25.0.8(typescript@7.0.2))
+        version: 12.0.9(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       '@semantic-release/release-notes-generator':
         specifier: ^14.1.1
-        version: 14.1.1(semantic-release@25.0.8(typescript@7.0.2))
+        version: 14.1.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       conventional-changelog-conventionalcommits:
         specifier: ^9.3.1
         version: 9.3.1
@@ -229,8 +229,8 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       node:
-        specifier: runtime:26.5.0
-        version: runtime:26.5.0
+        specifier: runtime:26.8.1
+        version: runtime:26.8.1
       oxfmt:
         specifier: '>=0.60.0'
         version: 0.60.0
@@ -242,7 +242,7 @@ importers:
         version: 7.0.2001
       semantic-release:
         specifier: ^25.0.8
-        version: 25.0.8(typescript@7.0.2)
+        version: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -1325,7 +1325,7 @@ packages:
     resolution: {integrity: sha512-Z3lTE9pLaJF47NyMhd4ww1yFTAP8YhYI8SleJiHzM46Fgpm5cnNzSl9XfzFNqbaz+VlJrIj3fXQ4DeN1Rjm6cw==}
     engines: {node: '>=18'}
 
-  node@runtime:26.5.0:
+  node@runtime:26.8.1:
     resolution:
       type: variations
       variants:
@@ -1333,9 +1333,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-JFZ51EYpEte5pfFnqBBXligSgXt8+LKcIux5MnGS7eA=
+            integrity: sha256-LU0HWYDdrNqgWeJ+wfHFU6TdQmIr2edB4eTDSBcwFAM=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-aix-ppc64.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-aix-ppc64.tar.gz
           targets:
             - cpu: ppc64
               os: aix
@@ -1343,9 +1343,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-7pIFWaqiORVpz/TXN+O4OWNDDjoU3t2Rv+D/UxcbWvk=
+            integrity: sha256-bld/0Nnbd224IwZinkQanazkFnAmIq690XHJ36pB9NI=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-darwin-arm64.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-darwin-arm64.tar.gz
           targets:
             - cpu: arm64
               os: darwin
@@ -1353,9 +1353,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-mCkzlMlFok5k4AtBd78HXslj6nCzTR0uJL1KcXFtM08=
+            integrity: sha256-/pxtv5yOG0RDgD114qIDZuQg2uZQx0fbsRayKXV1G68=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-darwin-x64.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-darwin-x64.tar.gz
           targets:
             - cpu: x64
               os: darwin
@@ -1363,9 +1363,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-MI5f6JqCRhulps8V/1Ihss29euh2AKpyuzw/vcZkEtE=
+            integrity: sha256-1flzzpdeS9A+bCA4Jg9+kgFhWqjh7ik8cvjcwqbZ/ds=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-arm64.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-arm64.tar.gz
           targets:
             - cpu: arm64
               os: linux
@@ -1373,9 +1373,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-ftjaaaLvAIhT4o+v4Tz+2drA/gHg74OxqOxbm4VX7Sg=
+            integrity: sha256-otDRIQjis89WkbFgVLG2xdhH0wbm8I1m/cY2PpmMejk=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-ppc64le.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-ppc64le.tar.gz
           targets:
             - cpu: ppc64le
               os: linux
@@ -1383,9 +1383,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-1nOVmxOQ4dCGX9euj7mBsWaX22NFoQsU4TDDAs9MvCg=
+            integrity: sha256-72un7U4iqWAp1ppcq5GvjnnlwUPI1jPECYOATcrJgi8=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-s390x.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-s390x.tar.gz
           targets:
             - cpu: s390x
               os: linux
@@ -1393,9 +1393,20 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-IrX0etaueIN+TCuEYBmWXOGga6FD3hdhAilKG/RPxnc=
+            integrity: sha256-erg+reDp7r2bo1IxuI0iWuXHKrVWlaPXqWEVocRe2Vw=
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-x64.tar.gz
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-x64-musl.tar.gz
+          targets:
+            - cpu: x64
+              os: linux
+              libc: musl
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-srdmYPpN7U4LKkHuPAxlHNUuqBcOrZHrrB4UesPVVkM=
+            type: binary
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-x64.tar.gz
           targets:
             - cpu: x64
               os: linux
@@ -1403,10 +1414,10 @@ packages:
             archive: zip
             bin:
               node: node.exe
-            integrity: sha256-wM+lh3tt50MwHmIvWrxNJvsP+HmK3/yP/9KIX0JgCLo=
-            prefix: node-v26.5.0-win-arm64
+            integrity: sha256-CdYgBaqdyo/Nm9zoGW9ap4Pu44GNWvdAietylxA8AtQ=
+            prefix: node-v26.8.1-win-arm64
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-win-arm64.zip
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-win-arm64.zip
           targets:
             - cpu: arm64
               os: win32
@@ -1414,10 +1425,10 @@ packages:
             archive: zip
             bin:
               node: node.exe
-            integrity: sha256-07InfbzM/fJO9jApKPZPSEz/HXem08qjoo9NIM6RWPY=
-            prefix: node-v26.5.0-win-x64
+            integrity: sha256-V2k9jpPRsE57feRqylPs1j6XVk5z3jamhCjX/wjYNYc=
+            prefix: node-v26.8.1-win-x64
             type: binary
-            url: https://nodejs.org/download/release/v26.5.0/node-v26.5.0-win-x64.zip
+            url: https://nodejs.org/download/release/v26.8.1/node-v26.8.1-win-x64.zip
           targets:
             - cpu: x64
               os: win32
@@ -1425,9 +1436,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-GrMa72VhGRaT82bKzXW7zvoDAeSaGLwFVUwhiTu9tJA=
+            integrity: sha256-D+eK/etKTSc7FKu9S5RsdyiFxYmUydI7HIrgpZovilM=
             type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-arm64-musl.tar.gz
+            url: https://unofficial-builds.nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-arm64-musl.tar.gz
           targets:
             - cpu: arm64
               os: linux
@@ -1436,14 +1447,14 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-APE5hBGkIWxabsqtO4JaDaXsAOee6MFzq2WglNl7mtg=
+            integrity: sha256-ExNaaiEG+dER+ptIyIAe0RmtQ+fh0A3hfXepxEiZqto=
             type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-x64-musl.tar.gz
+            url: https://unofficial-builds.nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-x64-musl.tar.gz
           targets:
             - cpu: x64
               os: linux
               libc: musl
-    version: 26.5.0
+    version: 26.8.1
     hasBin: true
 
   normalize-package-data@6.0.2:
@@ -2249,35 +2260,35 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@7.0.2))':
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
-      debug: 4.4.3
-      import-from-esm: 2.0.0
+      debug: 4.4.3(supports-color@7.2.0)
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       lodash-es: 4.18.1
       micromatch: 4.0.8
-      semantic-release: 25.0.8(typescript@7.0.2)
+      semantic-release: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@7.0.2))':
+  '@semantic-release/exec@7.1.0(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 3.1.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       execa: 9.6.1
       lodash-es: 4.18.1
       parse-json: 8.3.0
-      semantic-release: 25.0.8(typescript@7.0.2)
+      semantic-release: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@7.0.2))':
+  '@semantic-release/github@12.0.9(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
     dependencies:
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
@@ -2285,15 +2296,15 @@ snapshots:
       '@octokit/plugin-throttling': 11.0.3(@octokit/core@7.0.6)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       dir-glob: 3.0.1
-      http-proxy-agent: 9.1.0
-      https-proxy-agent: 9.1.0
+      http-proxy-agent: 9.1.0(supports-color@7.2.0)
+      https-proxy-agent: 9.1.0(supports-color@7.2.0)
       issue-parser: 7.0.2
       lodash-es: 4.18.1
       mime: 4.1.0
       p-filter: 4.1.0
-      semantic-release: 25.0.8(typescript@7.0.2)
+      semantic-release: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
       tinyglobby: 0.2.17
       undici: 7.28.0
       url-join: 5.0.0
@@ -2301,7 +2312,7 @@ snapshots:
       - kerberos
       - supports-color
 
-  '@semantic-release/npm@13.1.5(semantic-release@25.0.8(typescript@7.0.2))':
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))':
     dependencies:
       '@actions/core': 3.0.1
       '@semantic-release/error': 4.0.0
@@ -2316,21 +2327,21 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 25.0.8(typescript@7.0.2)
+      semantic-release: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
       semver: 7.8.5
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@7.0.2))':
+  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
-      debug: 4.4.3
-      import-from-esm: 2.0.0
+      debug: 4.4.3(supports-color@7.2.0)
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       lodash-es: 4.18.1
       read-package-up: 11.0.0
-      semantic-release: 25.0.8(typescript@7.0.2)
+      semantic-release: 25.0.8(supports-color@7.2.0)(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -2568,9 +2579,11 @@ snapshots:
     dependencies:
       type-fest: 1.4.0
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
   deep-extend@0.6.0: {}
 
@@ -2724,19 +2737,19 @@ snapshots:
     dependencies:
       lru-cache: 11.5.2
 
-  http-proxy-agent@9.1.0:
+  http-proxy-agent@9.1.0(supports-color@7.2.0):
     dependencies:
       agent-base: 9.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       proxy-agent-negotiate: 1.1.0
     transitivePeerDependencies:
       - kerberos
       - supports-color
 
-  https-proxy-agent@9.1.0:
+  https-proxy-agent@9.1.0(supports-color@7.2.0):
     dependencies:
       agent-base: 9.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       proxy-agent-negotiate: 1.1.0
     transitivePeerDependencies:
       - kerberos
@@ -2753,9 +2766,9 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
-  import-from-esm@2.0.0:
+  import-from-esm@2.0.0(supports-color@7.2.0):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       import-meta-resolve: 4.2.0
     transitivePeerDependencies:
       - supports-color
@@ -2903,7 +2916,7 @@ snapshots:
       emojilib: 2.4.0
       skin-tone: 2.0.0
 
-  node@runtime:26.5.0: {}
+  node@runtime:26.8.1: {}
 
   normalize-package-data@6.0.2:
     dependencies:
@@ -3138,16 +3151,16 @@ snapshots:
 
   safe-buffer@5.1.2: {}
 
-  semantic-release@25.0.8(typescript@7.0.2):
+  semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.8(typescript@7.0.2))
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.9(semantic-release@25.0.8(typescript@7.0.2))
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.8(typescript@7.0.2))
-      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.8(typescript@7.0.2))
+      '@semantic-release/github': 12.0.9(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))
+      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.8(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.2(typescript@7.0.2)
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@7.2.0)
       env-ci: 11.2.0
       execa: 9.6.1
       figures: 6.1.0
@@ -3156,7 +3169,7 @@ snapshots:
       git-log-parser: 1.2.1
       hook-std: 4.0.0
       hosted-git-info: 9.0.3
-      import-from-esm: 2.0.0
+      import-from-esm: 2.0.0(supports-color@7.2.0)
       lodash-es: 4.18.1
       marked: 15.0.12
       marked-terminal: 7.3.0(marked@15.0.12)
