@@ -260,7 +260,7 @@ export default defineConfig({
 
     // OXC - PERF
     "oxc/no-accumulating-spread": "error",
-    "oxc/no-map-spread": "error",
+    "oxc/no-map-spread": "off", // values.map((value) => ({ ...value, other: "property" })) is a convenient way to add properties to an object that should be immutable
 
     // OXC - RESTRICTION
     "oxc/no-barrel-file": ["error", { threshold: 0 }],
