@@ -2,10 +2,6 @@ import { defineConfig } from "oxlint"
 
 export default defineConfig({
   plugins: ["typescript", "import", "node", "promise"],
-  categories: {
-    correctness: "error",
-    suspicious: "error",
-  },
   options: {
     typeAware: true,
   },
@@ -13,13 +9,101 @@ export default defineConfig({
     builtin: true,
   },
   rules: {
-    "consistent-return": "off", // noImplicitReturns does this for you
-    "import/no-unassigned-import": [
+    // ESLINT - CORRECTNESS
+    "constructor-super": ["error"],
+    "no-async-promise-executor": ["error"],
+    "no-caller": ["error"],
+    "no-class-assign": ["error"],
+    "no-compare-neg-zero": ["error"],
+    "no-cond-assign": ["error"],
+    "no-const-assign": ["error"],
+    "no-constant-condition": [
       "error",
       {
-        allow: ["**/*.css"],
+        checkLoops: false,
       },
     ],
+    "no-control-regex": ["error"],
+    "no-debugger": ["error"],
+    "no-delete-var": ["error"],
+    "no-dupe-class-members": ["error"],
+    "no-dupe-keys": ["error"],
+    "no-duplicate-case": ["error"],
+    "no-empty-character-class": ["error"],
+    "no-empty-pattern": ["error"],
+    "no-eval": ["error"],
+    "no-ex-assign": ["error"],
+    "no-extra-boolean-cast": ["error"],
+    "no-func-assign": ["error"],
+    "no-global-assign": ["error"],
+    "no-import-assign": ["error"],
+    "no-invalid-regexp": ["error"],
+    "no-irregular-whitespace": ["error"],
+    "no-iterator": ["error"],
+    "no-loss-of-precision": ["error"],
+    "no-misleading-character-class": ["error"],
+    "no-obj-calls": ["error"],
+    "no-self-assign": [
+      "error",
+      {
+        props: true,
+      },
+    ],
+    "no-shadow-restricted-names": ["error"],
+    "no-sparse-arrays": ["error"],
+    "no-this-before-super": ["error"],
+    "no-unreachable": ["error"],
+    "no-unsafe-finally": ["error"],
+    "no-unsafe-negation": ["error"],
+    "no-unused-expressions": [
+      "error",
+      {
+        allowShortCircuit: true,
+        allowTaggedTemplates: true,
+        allowTernary: true,
+        enforceForJSX: false,
+      },
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        varsIgnorePattern: "^_",
+        argsIgnorePattern: "^_",
+      },
+    ],
+    "no-useless-backreference": ["error"],
+    "no-useless-catch": ["error"],
+    "no-useless-escape": ["error"],
+    "no-useless-rename": ["error"],
+    "no-with": ["error"],
+    "use-isnan": [
+      "error",
+      {
+        enforceForIndexOf: true,
+        enforceForSwitchCase: true,
+      },
+    ],
+    "valid-typeof": [
+      "error",
+      {
+        requireStringLiterals: true,
+      },
+    ],
+
+    // ESLINT - SUSPICIOUS
+    "no-extend-native": ["error"],
+    "no-extra-bind": ["error"],
+    "no-new": ["error"],
+    "no-unmodified-loop-condition": ["error"],
+    "no-unneeded-ternary": [
+      "error",
+      {
+        defaultAssignment: false,
+      },
+    ],
+    "no-useless-constructor": ["error"],
+
+    // ESLINT - EXTRAS
     "no-throw-literal": "off", // only-throw-error covers this
     "accessor-pairs": [
       "error",
@@ -37,21 +121,8 @@ export default defineConfig({
         checkForEach: false,
       },
     ],
-    "constructor-super": ["error"],
     "default-case-last": ["error"],
     eqeqeq: ["error", "always"],
-    "import/first": ["error"],
-    "import/no-absolute-path": [
-      "error",
-      {
-        amd: false,
-        commonjs: true,
-        esmodule: true,
-      },
-    ],
-    "import/no-duplicates": ["error"],
-    "import/no-named-default": ["error"],
-    "import/no-webpack-loader-syntax": ["error"],
     "new-cap": [
       "error",
       {
@@ -60,45 +131,16 @@ export default defineConfig({
         properties: true,
       },
     ],
-    "no-async-promise-executor": ["error"],
-    "no-caller": ["error"],
+    "no-array-constructor": ["error"],
     "no-case-declarations": ["error"],
-    "no-class-assign": ["error"],
-    "no-compare-neg-zero": ["error"],
-    "no-cond-assign": ["error"],
     "no-console": ["error"],
-    "no-const-assign": ["error"],
-    "no-constant-condition": [
-      "error",
-      {
-        checkLoops: false,
-      },
-    ],
-    "no-control-regex": ["error"],
-    "no-debugger": ["error"],
-    "no-delete-var": ["error"],
-    "no-dupe-keys": ["error"],
-    "no-duplicate-case": ["error"],
     "no-empty": [
       "error",
       {
         allowEmptyCatch: true,
       },
     ],
-    "no-empty-character-class": ["error"],
-    "no-empty-pattern": ["error"],
-    "no-eval": ["error"],
-    "no-ex-assign": ["error"],
-    "no-extend-native": ["error"],
-    "no-extra-bind": ["error"],
-    "no-extra-boolean-cast": ["error"],
     "no-fallthrough": ["error"],
-    "no-func-assign": ["error"],
-    "no-global-assign": ["error"],
-    "no-import-assign": ["error"],
-    "no-invalid-regexp": ["error"],
-    "no-irregular-whitespace": ["error"],
-    "no-iterator": ["error"],
     "no-labels": [
       "error",
       {
@@ -107,44 +149,28 @@ export default defineConfig({
       },
     ],
     "no-lone-blocks": ["error"],
-    "no-misleading-character-class": ["error"],
     "no-multi-str": ["error"],
-    "no-new": ["error"],
     "no-new-func": ["error"],
     "no-new-wrappers": ["error"],
-    "no-obj-calls": ["error"],
     "no-proto": ["error"],
     "no-prototype-builtins": ["error"],
     "no-regex-spaces": ["error"],
     "no-return-assign": ["error", "except-parens"],
-    "no-self-assign": [
-      "error",
-      {
-        props: true,
-      },
-    ],
     "no-self-compare": ["error"],
     "no-sequences": ["error"],
-    "no-shadow-restricted-names": ["error"],
-    "no-sparse-arrays": ["error"],
     "no-template-curly-in-string": ["error"],
-    "no-this-before-super": ["error"],
-    "no-unmodified-loop-condition": ["error"],
-    "no-unneeded-ternary": [
+    "no-use-before-define": [
       "error",
       {
-        defaultAssignment: false,
+        classes: false,
+        enums: false,
+        functions: false,
+        typedefs: false,
+        variables: false,
       },
     ],
-    "no-unreachable": ["error"],
-    "no-unsafe-finally": ["error"],
-    "no-unsafe-negation": ["error"],
-    "no-useless-backreference": ["error"],
     "no-useless-call": ["error"],
-    "no-useless-catch": ["error"],
     "no-useless-computed-key": ["error"],
-    "no-useless-escape": ["error"],
-    "no-useless-rename": ["error"],
     "no-var": ["error"],
     "no-void": [
       "error",
@@ -153,7 +179,6 @@ export default defineConfig({
       },
     ],
     "no-warning-comments": "error",
-    "no-with": ["error"],
     "object-shorthand": ["error", "properties"],
     "prefer-const": [
       "error",
@@ -169,57 +194,135 @@ export default defineConfig({
         disallowRedundantWrapping: true,
       },
     ],
-    "promise/param-names": ["error"],
     "symbol-description": ["error"],
     "unicode-bom": ["error", "never"],
-    "use-isnan": [
-      "error",
-      {
-        enforceForIndexOf: true,
-        enforceForSwitchCase: true,
-      },
-    ],
-    "valid-typeof": [
-      "error",
-      {
-        requireStringLiterals: true,
-      },
-    ],
     yoda: ["error", "never"],
-    "no-array-constructor": ["error"],
-    "no-dupe-class-members": ["error"],
-    "no-loss-of-precision": ["error"],
-    "no-unused-expressions": [
+
+    // IMPORT - CORRECTNESS
+    "import/default": "error",
+    "import/namespace": "error",
+
+    // IMPORT - SUSPICIOUS
+    "import/no-absolute-path": [
       "error",
       {
-        allowShortCircuit: true,
-        allowTaggedTemplates: true,
-        allowTernary: true,
-        enforceForJSX: false,
+        amd: false,
+        commonjs: true,
+        esmodule: true,
       },
     ],
-    "no-unused-vars": [
+    "import/no-empty-named-blocks": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-self-import": "error",
+    "import/no-unassigned-import": [
       "error",
       {
-        varsIgnorePattern: "^_",
-        argsIgnorePattern: "^_",
+        allow: ["**/*.css"],
       },
     ],
-    "no-use-before-define": [
-      "error",
-      {
-        classes: false,
-        enums: false,
-        functions: false,
-        typedefs: false,
-        variables: false,
-      },
-    ],
-    "no-useless-constructor": ["error"],
+
+    // IMPORT - EXTRAS
+    "import/first": ["error"],
+    "import/no-duplicates": ["error"],
+    "import/no-named-default": ["error"],
+    "import/no-webpack-loader-syntax": ["error"],
+
+    // NODE - EXTRAS
     "node/handle-callback-err": ["error", "^(err|error)$"],
     "node/no-exports-assign": ["error"],
     "node/no-new-require": ["error"],
     "node/no-path-concat": ["error"],
+
+    // PROMISE - CORRECTNESS
+    "promise/no-callback-in-promise": "error",
+    "promise/no-new-statics": "error",
+    "promise/valid-params": "error",
+
+    // PROMISE - SUSPICIOUS
+    "promise/always-return": "error",
+    "promise/no-multiple-resolved": "error",
+    "promise/no-promise-in-callback": "error",
+
+    // PROMISE - EXTRAS
+    "promise/param-names": ["error"],
+
+    // TYPESCRIPT - CORRECTNESS
+    "typescript/await-thenable": ["error"],
+    "typescript/no-array-delete": "error",
+    "typescript/no-base-to-string": ["error"],
+    "typescript/no-duplicate-enum-values": "error",
+    "typescript/no-duplicate-type-constituents": "error",
+    "typescript/no-extra-non-null-assertion": ["error"],
+    "typescript/no-floating-promises": ["error"],
+    "typescript/no-for-in-array": ["error"],
+    "typescript/no-implied-eval": ["error"],
+    "typescript/no-meaningless-void-operator": "error",
+    "typescript/no-misused-new": ["error"],
+    "typescript/no-misused-spread": "error",
+    "typescript/no-non-null-asserted-optional-chain": ["error"],
+    "typescript/no-redundant-type-constituents": "error",
+    "typescript/no-this-alias": [
+      "error",
+      {
+        allowDestructuring: true,
+      },
+    ],
+    "typescript/no-unnecessary-parameter-property-assignment": "error",
+    "typescript/no-unsafe-declaration-merging": "error",
+    "typescript/no-unsafe-unary-minus": "error",
+    "typescript/no-useless-default-assignment": "error",
+    "typescript/no-useless-empty-export": "error",
+    "typescript/no-wrapper-object-types": "error",
+    "typescript/prefer-as-const": "error",
+    "typescript/prefer-namespace-keyword": "error",
+    "typescript/require-array-sort-compare": [
+      "error",
+      {
+        ignoreStringArrays: true,
+      },
+    ],
+    "typescript/restrict-template-expressions": [
+      "error",
+      {
+        allowNumber: true,
+      },
+    ],
+    "typescript/triple-slash-reference": [
+      "error",
+      {
+        lib: "never",
+        path: "never",
+        types: "never",
+      },
+    ],
+    "typescript/unbound-method": [
+      "error",
+      {
+        ignoreStatic: false,
+      },
+    ],
+
+    // TYPESCRIPT - SUSPICIOUS
+    "typescript/consistent-return": "off", // noImplicitReturns does this for you, see https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-return.html
+    "typescript/no-confusing-non-null-assertion": "error",
+    "typescript/no-extraneous-class": [
+      "error",
+      {
+        allowWithDecorator: true,
+      },
+    ],
+    "typescript/no-unnecessary-boolean-literal-compare": ["error"],
+    "typescript/no-unnecessary-template-expression": "error",
+    "typescript/no-unnecessary-type-arguments": "error",
+    "typescript/no-unnecessary-type-assertion": ["error"],
+    "typescript/no-unnecessary-type-constraint": ["error"],
+    "typescript/no-unnecessary-type-conversion": "error",
+    "typescript/no-unnecessary-type-parameters": "error",
+    "typescript/no-unsafe-enum-comparison": "error",
+    "typescript/no-unsafe-type-assertion": "error",
+
+    // TYPESCRIPT - EXTRAS
     "typescript/adjacent-overload-signatures": ["error"],
     "typescript/array-type": [
       "error",
@@ -227,7 +330,6 @@ export default defineConfig({
         default: "array-simple",
       },
     ],
-    "typescript/await-thenable": ["error"],
     "typescript/ban-ts-comment": [
       "error",
       {
@@ -239,9 +341,6 @@ export default defineConfig({
       },
     ],
     "typescript/ban-tslint-comment": ["error"],
-    "typescript/no-empty-object-type": "error",
-    "typescript/no-unsafe-function-type": "error",
-    "typescript/no-wrapper-object-types": "error",
     "typescript/class-literal-property-style": ["error", "fields"],
     "typescript/consistent-generic-constructors": ["error", "constructor"],
     "typescript/consistent-indexed-object-style": ["error", "record"],
@@ -284,8 +383,8 @@ export default defineConfig({
         allowTypedFunctionExpressions: true,
       },
     ],
+    "typescript/explicit-member-accessibility": ["error"],
     "typescript/method-signature-style": ["error"],
-    "typescript/no-base-to-string": ["error"],
     "typescript/no-confusing-void-expression": [
       "error",
       {
@@ -300,42 +399,22 @@ export default defineConfig({
         allowSingleExtends: true,
       },
     ],
+    "typescript/no-empty-object-type": "error",
     "typescript/no-explicit-any": ["error"],
-    "typescript/no-extra-non-null-assertion": ["error"],
-    "typescript/no-extraneous-class": [
-      "error",
-      {
-        allowWithDecorator: true,
-      },
-    ],
-    "typescript/no-floating-promises": ["error"],
-    "typescript/no-for-in-array": ["error"],
-    "typescript/no-implied-eval": ["error"],
     "typescript/no-invalid-void-type": [
       "error",
       {
         allowAsThisParameter: true,
       },
     ],
-    "typescript/explicit-member-accessibility": ["error"],
-    "typescript/no-misused-new": ["error"],
     "typescript/no-misused-promises": ["error"],
     "typescript/no-namespace": ["error"],
-    "typescript/no-non-null-asserted-optional-chain": ["error"],
     "typescript/no-non-null-assertion": ["error"],
-    "typescript/no-this-alias": [
-      "error",
-      {
-        allowDestructuring: true,
-      },
-    ],
-    "typescript/only-throw-error": ["error"],
-    "typescript/no-unnecessary-boolean-literal-compare": ["error"],
-    "typescript/no-unnecessary-type-assertion": ["error"],
-    "typescript/no-unnecessary-type-constraint": ["error"],
     "typescript/no-unsafe-argument": ["error"],
+    "typescript/no-unsafe-function-type": "error",
     "typescript/no-var-requires": ["error"],
     "typescript/non-nullable-type-assertion-style": ["error"],
+    "typescript/only-throw-error": ["error"],
     "typescript/prefer-function-type": ["error"],
     "typescript/prefer-includes": ["error"],
     "typescript/prefer-nullish-coalescing": [
@@ -350,22 +429,10 @@ export default defineConfig({
     "typescript/prefer-return-this-type": ["error"],
     "typescript/prefer-ts-expect-error": ["error"],
     "typescript/promise-function-async": ["error"],
-    "typescript/require-array-sort-compare": [
-      "error",
-      {
-        ignoreStringArrays: true,
-      },
-    ],
     "typescript/restrict-plus-operands": [
       "error",
       {
         skipCompoundAssignments: false,
-      },
-    ],
-    "typescript/restrict-template-expressions": [
-      "error",
-      {
-        allowNumber: true,
       },
     ],
     "typescript/return-await": ["error", "always"],
@@ -381,26 +448,15 @@ export default defineConfig({
         allowString: false,
       },
     ],
-    "typescript/triple-slash-reference": [
-      "error",
-      {
-        lib: "never",
-        path: "never",
-        types: "never",
-      },
-    ],
-    "typescript/unbound-method": [
-      "error",
-      {
-        ignoreStatic: false,
-      },
-    ],
+
+    // UNICORN - SUSPICIOUS
     "unicorn/no-array-sort": "off", // The rule doesn't have good configuration options and flags a lot of fine use cases
   },
   overrides: [
     {
       files: ["**/*.{test,spec}.{ts,tsx}"],
       rules: {
+        // UNICORN - SUSPICIOUS
         "unicorn/consistent-function-scoping": "off", // Useful to keep functions scoped to their test
       },
     },
