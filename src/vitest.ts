@@ -22,7 +22,12 @@ export default defineConfig({
     "vitest/valid-describe-callback": "error",
     "vitest/valid-expect": "error",
     "vitest/valid-expect-in-promise": "error",
-    "vitest/valid-title": "error",
+    "vitest/valid-title": [
+      "error",
+      {
+        mustMatch: { it: "^should\\b" },
+      },
+    ],
     "vitest/warn-todo": "error",
 
     // VITEST - SUSPICIOUS
