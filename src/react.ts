@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint"
 
 export default defineConfig({
-  plugins: ["react", "react-perf"],
+  plugins: ["react"],
   env: {
     browser: true,
     serviceworker: true,
@@ -65,11 +65,5 @@ export default defineConfig({
     "react/no-unescaped-entities": "error",
     "react/no-unknown-property": "error",
     "react/rules-of-hooks": "error",
-
-    // REACT-PERF - PERF
-    "react_perf/jsx-no-jsx-as-prop": "error",
-    "react_perf/jsx-no-new-array-as-prop": "error",
-    "react_perf/jsx-no-new-function-as-prop": "error",
-    "react_perf/jsx-no-new-object-as-prop": "error",
   },
 })
