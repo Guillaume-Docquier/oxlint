@@ -36,7 +36,7 @@ export default defineConfig({
     "vitest/consistent-test-it": ["error", { fn: "it" }],
     "vitest/no-alias-methods": "error",
     "vitest/no-duplicate-hooks": "error",
-    "vitest/vitest/no-hooks": "error",
+    "vitest/no-hooks": "error",
     "vitest/no-identical-title": "error",
     "vitest/padding-around-test-blocks": "error",
     "vitest/prefer-strict-equal": "error",
