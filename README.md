@@ -10,10 +10,11 @@ pnpm add --save-dev @guillaume-docquier/oxlint oxlint oxlint-tsgolint
 
 ## Use
 
-The package exports two independent configs:
+The package exports three independent configs:
 
 - `typescript` contains the shared TypeScript rules and root settings.
 - `react` contains the React rules and browser environment.
+- `vitest` contains the Vitest rules and test environment.
 
 Pick the configs your project needs and compose them in `oxlint.config.ts`.
 
