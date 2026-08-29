@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint"
 
 export default defineConfig({
-  plugins: ["typescript", "import", "node", "promise"],
+  plugins: ["import", "node", "oxc", "promise", "typescript", "unicorn"],
   options: {
     typeAware: true,
   },
@@ -233,6 +233,37 @@ export default defineConfig({
     "node/no-exports-assign": ["error"],
     "node/no-new-require": ["error"],
     "node/no-path-concat": ["error"],
+
+    // OXC - CORRECTNESS
+    "oxc/bad-array-method-on-arguments": "error",
+    "oxc/bad-char-at-comparison": "error",
+    "oxc/bad-comparison-sequence": "error",
+    "oxc/bad-match-all-arg": "error",
+    "oxc/bad-min-max-func": "error",
+    "oxc/bad-object-literal-comparison": "error",
+    "oxc/bad-replace-all-arg": "error",
+    "oxc/const-comparisons": "error",
+    "oxc/double-comparisons": "error",
+    "oxc/erasing-op": "error",
+    "oxc/missing-throw": "error",
+    "oxc/number-arg-out-of-range": "error",
+    "oxc/only-used-in-recursion": "error",
+    "oxc/uninvoked-array-callback": "error",
+
+    // OXC - SUSPICIOUS
+    "oxc/approx-constant": "error",
+    "oxc/misrefactored-assign-op": "error",
+    "oxc/no-this-in-exported-function": "error",
+
+    // OXC - PEDANTIC
+    "oxc/branches-sharing-code": "error",
+
+    // OXC - PERF
+    "oxc/no-accumulating-spread": "error",
+    "oxc/no-map-spread": "error",
+
+    // OXC - RESTRICTION
+    "oxc/no-barrel-file": ["error", { threshold: 0 }],
 
     // PROMISE - CORRECTNESS
     "promise/no-callback-in-promise": "error",
