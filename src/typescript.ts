@@ -214,11 +214,11 @@ export default defineConfig({
       },
     ],
 
-    // IMPORT - EXTRAS
+    // IMPORT - STYLE
+    "import/consistent-type-specifier-style": ["error", "prefer-top-level-if-only-type-imports"],
     "import/first": "error",
     "import/no-duplicates": "error",
     "import/no-named-default": "error",
-    "import/no-webpack-loader-syntax": "error",
 
     // NODE - EXTRAS
     "node/handle-callback-err": ["error", "^(err|error)$"],
