@@ -496,6 +496,7 @@ export default defineConfig({
 
     // UNICORN - RESTRICTION
     "unicorn/import-style": "error",
+    "unicorn/prefer-node-protocol": "error",
 
     // UNICORN - STYLE
     "unicorn/custom-error-definition": "error",
