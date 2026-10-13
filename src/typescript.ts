@@ -95,6 +95,9 @@ export default defineConfig({
     ],
     "no-useless-constructor": "error",
 
+    // ESLINT - STYLE
+    curly: ["error", "all"],
+
     // ESLINT - EXTRAS
     "no-throw-literal": "off", // only-throw-error covers this
     "accessor-pairs": [
