@@ -5,7 +5,7 @@ Shared Oxlint configuration for my TypeScript projects.
 ## Install
 
 ```sh
-pnpm add --save-dev @guillaume-docquier/oxlint oxlint oxlint-tsgolint
+pnpm add --save-dev @guillaume-docquier/oxlint oxlint oxlint-plugin-eslint oxlint-tsgolint
 ```
 
 ## Use

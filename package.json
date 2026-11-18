@@ -52,6 +52,7 @@
   },
   "peerDependencies": {
     "oxlint": "^1.90.0",
+    "oxlint-plugin-eslint": "^1.94.0",
     "oxlint-tsgolint": "^7.0.2005"
   },
   "lint-staged": {

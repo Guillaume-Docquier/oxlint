@@ -2,6 +2,7 @@ import { defineConfig } from "oxlint"
 
 export default defineConfig({
   plugins: ["import", "node", "oxc", "promise", "typescript", "unicorn"],
+  jsPlugins: [{ name: "eslint-js", specifier: "oxlint-plugin-eslint" }],
   options: {
     typeAware: true,
   },
@@ -97,6 +98,17 @@ export default defineConfig({
 
     // ESLINT - STYLE
     curly: ["error", "all"],
+
+    // ESLINT - RESTRICTION
+    "eslint-js/no-restricted-syntax": [
+      "error",
+      {
+        selector:
+          "ObjectExpression > SpreadElement > ConditionalExpression:matches([consequent.properties.length=0], [alternate.properties.length=0])",
+        message:
+          "Make the property accept `undefined` or build the optional property on an explicitly typed object. Otherwise, this statement is not type safe and typescript will not warn of typos.",
+      },
+    ],
 
     // ESLINT - EXTRAS
     "no-throw-literal": "off", // only-throw-error covers this
