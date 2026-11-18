@@ -106,7 +106,7 @@ export default defineConfig({
         selector:
           "ObjectExpression > SpreadElement > ConditionalExpression:matches([consequent.properties.length=0], [alternate.properties.length=0])",
         message:
-          "Make the property accept `undefined` or build the optional property on an explicitly typed object. Otherwise, this statement is not type safe and typescript will not warn of typos.",
+          "Make the property accept `undefined`, use a null coalescing operator `??` or build the optional property on an explicitly typed object. Otherwise, this statement is not type safe and typescript will not warn of typos.",
       },
     ],
 
